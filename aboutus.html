@@ -1,0 +1,153 @@
+<html>
+
+<head>
+	<link rel="icon" href="./images/head/logo.png">
+	<link rel="stylesheet" type="text/css" href="bonchon.css">
+	<title>Menu</title>
+	<script>
+		function addToCart(item, price) {
+			let cart = JSON.parse(localStorage.getItem('cart')) || [];
+			cart.push({ item, price });
+			localStorage.setItem('cart', JSON.stringify(cart));
+			alert(item + " added to cart!");
+		}
+	</script>
+</head>
+
+<body>
+	<ul class="navul">
+		<li class="navli"><a href="index.html">Home</a></li>
+		<li class="navli"><a href="aboutus.html" id="active">Menu</a></li>
+		<li class="navli"><a href="contactus.html">Contact Us</a></li>
+		<li class="navli"><a href="registration.html">Registration</a></li>
+		<li class="navli"><a href="login.html">Log In</a></li>	
+		<li class="navli"><a href="Cart.html">Cart</a></li>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <img src="./images/head/logo.png" height="50px" width="50px">
+	</ul>
+	
+	<header></header>
+	<body>
+
+	<div class="orangeb wt aw">
+	<br>
+	<br>
+	<br>
+		<h1>BonChon</h1>
+		<p>It’s not just chicken, it’s BonChon Chicken.</p>
+	<br>
+	<br>
+	<br>
+	</div>
+
+		<br>
+		<h1 class="ot"> The Start of a Delicious Adventure</h1>
+		
+		<p style="font-family:verdana"> </p>
+	</div>
+
+	<br>
+	<br>
+	<div class="timeline">
+		<div class="orangeb ot">
+			<div class="container left">
+				<div class="content">
+		<br>
+		<h1>BULGOGI FRIES</h1>
+		<img src="https://bonchon.sfo3.digitaloceanspaces.com/Menu/Bonchon_Bulgogi-Fries_Web.png" width="70%" height="70%">
+		<h1>P 95</h1>
+		<p>Thinly sliced USDA select certified marinated beef piled on our seasoned fries topped with mozzarella cheese, a spicy mayo drizzle, and chopped green onions.</p>
+		<button onclick="addToCart('BULGOGI FRIES', 95)">Add to Cart</button>
+		<br>
+				</div>
+			</div>
+
+	  <div class="container right ot">
+		<div class="content">	
+		<h1>POTSTICKERS</h1>
+		<img src="https://bonchon.sfo3.digitaloceanspaces.com/Menu/Potstickers@2x.jpg" width="70%" height="70%">
+		<h1>P 149</h1>
+		<p>Lightly fried pork or vegetable dumplings brushed with Bonchon Signature Sauce. Choice of Soy Garlic, Spicy, or Half & Half.</p>
+		<button onclick="addToCart('POTSTICKERS', 149)">Add to Cart</button>
+		<br>
+	</div>
+	</div>
+
+		<div class="container left ot">
+			<div class="content">
+			<h1>HOUSE FRIED RICE</h1>
+			<img src="https://bonchon.sfo3.digitaloceanspaces.com/Menu/Chicken-Fried-Rice-523@2x.jpg" width="70%" height="70%">
+			<h1>P 289</h1>
+			<p>A traditional wok-prepared dish with your choice of our famous Soy Garlic chicken, Spicy chicken, or marinated ribeye with Jasmine rice, fresh vegetables, and fried egg topped with sesame seeds and a cucumber garnish. *Contains sesame seeds or sesame seed oil.</p>
+			<button onclick="addToCart('HOUSE FRIED RICE', 289)">Add to Cart</button>
+	</div>
+	</div>
+
+	  <div class="container right ot">
+		<div class="content">	
+		<h1>CHICKEN KATSU</h1>
+		<img src="https://bonchon.sfo3.digitaloceanspaces.com/Menu/Bonchon_ChickKatsu_Web.jpg" width="70%" height="70%">
+		<h1>P 200</h1>
+		<p>Breaded chicken cutlet served with steamed rice, and drizzled with katsu sauce and spicy mayo. Served with coleslaw on the side. *Contains sesame seeds or sesame seed oil.
+		<p><i>“The Best Buffalo Hot wings in America” – Esquire</i></p>
+		<p><i>“Bonchon, the reason to get excited about fast food again!”  – GQ magazine<i></p></p>
+		<button onclick="addToCart('CHICKEN KATSU', 200)">Add to Cart</button>
+	</div>
+	</div>
+
+		<div class="container left ot">
+			<div class="content">
+		<br>	
+		<h1>SHRIMP SHUMAI</h1>
+		<img src="https://bonchon.sfo3.digitaloceanspaces.com/Menu/Bonchon_Shumai_Web.png" width="70%" height="70%">
+		<h1>P 105</h1>
+		<p>Steamed or fried shrimp dumplings drizzled with honey dijon dressing.</p>
+		<button onclick="addToCart('SHRIMP SHUMAI', 105)">Add to Cart</button>
+		<br>
+	</div>
+	</div>
+
+	   <div class="container right ot">
+		<div class="content">	
+		<h1>BIBIMBAP</h1>
+		<img src="https://bonchon.sfo3.digitaloceanspaces.com/Menu/Bonchon_Bibimbop_Web.jpg" width="70%" height="70%">
+		<h1>P 150</h1>
+		<p>White rice, quinoa, assorted seasonal vegetables, sesame seeds, and egg served with Bonchon Bibimbap sauce. *Contains sesame seeds or sesame seed oil.
+		<button onclick="addToCart('BIBIMBAP', 150)">Add to Cart</button>
+	<p>
+	</div>
+	</div>
+
+		<div class="container left ot">
+			<div class="content">
+			<h1>BULDAK</h1>
+			<img src="https://bonchon.sfo3.digitaloceanspaces.com/Menu/Bonchon_BullDak_Web.jpg" width="70%" height="70%">
+			<h1>P 200</h1>
+			<p>Spicy chicken, rice cakes, onions, and hot pepper sauce stir-fried and topped with scallions and sesame seeds, and mozzarella cheese. Served with white rice. *Contains sesame seeds or sesame seed oil.</p>
+			<button onclick="addToCart('BULDAK', 200)">Add to Cart</button>
+	</div>
+	</div>
+	</div>
+	</div>
+
+
+	<div>
+
+	<br>
+	<br>
+
+	<p><i>Copyright © 2023 <a style="color:blue" href="http://bonchon.com.ph/" target="_blank">BonChon Chicken Philippines</a>. All rights reserved. <a style="color:blue" href="https://bonchon.com.ph/terms-of-use" target="_blank"> Terms of Use </a> | <a style="color:blue" href="https://bonchon.com.ph/legal" target="_blank"> Legal </a>| <a id="mark">Site Map</a></p></i>
+
+	<br>
+	<br>
+
+	<img src="./images/head/logo.png"/ height="10%" width="10%">
+
+	<br>
+	<br>
+
+	<!-- Add the View Cart button at the bottom of the page -->
+	<center><button onclick="window.location.href='cart.html'">View Cart</button></center>
+
+	<br>
+	</body>
+</html>

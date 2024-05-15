@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="./images/head/logo.png">
+	<link rel="stylesheet" type="text/css" href="bonchon.css">
+	<title>BonChon</title>
+	<script>
+		function addToCart(item, price) {
+			let cart = JSON.parse(localStorage.getItem('cart')) || [];
+			cart.push({ item, price });
+			localStorage.setItem('cart', JSON.stringify(cart));
+			alert(item + " has been added to your cart.");
+		}
+	</script>
+</head>
+<body>
+	<ul class="navul">
+		<li class="navli"><a href="index.html" id="active">Home</a></li>
+		<li class="navli"><a href="menu.html">Menu</a></li>
+		<li class="navli"><a href="contactus.html">Contact Us</a></li>
+		<li class="navli"><a href="registration.html">Registration</a></li>
+		<li class="navli"><a href="login.html">Log In</a></li>
+		<li class="navli"><a href="Cart.html">Cart</a></li>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <img src="./images/head/logo.png" height="50px" width="50px">
+	</ul>
+	
+	<header></header>
+
+	<div class="orangeb wt aw">
+		<br><br><br>
+		<h1>BonChon</h1>
+		<p style="font-family:verdana">It’s not just chicken, it’s BonChon Chicken.</p>
+		<br><br><br>
+	</div>
+
+	<div class="whiteb ot">
+		<br>
+		<h1>BITE INTO A NEW BEAT!</h1>
+		<iframe width="700" height="325" src="https://www.youtube.com/embed/xTDcvGqAooU/?&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<br><br><br>
+	</div>
+
+	<div class="orangeb wt">
+		<br>
+		<h3>KOREAN CHICKEN</h3>
+		<h3><strong>Try our Crunchy Chicken</strong></h3>
+		<img src="./images/homepage/garlicchkn.png" title="Garlic Chicken" height="40%" width="40%">
+		<p>Only 172 pesos. Taste the new Crunchy Garlic Chicken. Our classic Crunchy Chicken glazed.</p>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<p style="font-size:20px"><strong>You can also try</strong></p>
+
+		<div class="row">
+			<div class="column">
+				<img src="https://bonchon.com.ph/storage/menu/hqnLxcNxmBMLzazRE50Td9JEBZhFjtsvsaCnrMkK.png" alt="2-PC KOREAN FRIED CHICKEN" style="width:70%">
+				<p><strong>2-PC KOREAN FRIED CHICKEN</strong></p>
+				<p>₱ 230</p>
+				<button onclick="addToCart('2-PC KOREAN FRIED CHICKEN', 230)">Add to Cart</button>
+			</div>
+			<div class="column">
+				<img src="https://bonchon.com.ph/storage/menu/XKtAjd9gPzrELx1486kTUunIHuoos0tUB2lj8EHa.png" alt="1-PC KOREAN FRIED CHICKEN" style="width:70%">
+				<p><strong>1-PC KOREAN FRIED CHICKEN</strong></p>
+				<p>₱ 140</p>
+				<button onclick="addToCart('1-PC KOREAN FRIED CHICKEN', 140)">Add to Cart</button>
+			</div>
+			<div class="column">
+				<img src="https://bonchon.com.ph/storage/menu/GNcQfUaMs8qwRMZhJjD90v2uBfx61DJcb4SCqtdq.png" alt="CHIKIN CHOPS WITH RICE" style="width:70%">
+				<p><strong>CHIKIN CHOPS WITH RICE</strong></p>
+				<p>₱ 232</p>
+				<button onclick="addToCart('CHIKIN CHOPS WITH RICE', 232)">Add to Cart</button>
+			</div>
+			<div class="column">
+				<img src="https://bonchon.com.ph/storage/menu/4TAnR5sSkWT5ZfNvhlgo3NAkrZ9wdcKrHoMqHuU6.png" alt="CHICKEN POPPERS" style="width:70%">
+				<p><strong>CHICKEN POPPERS</strong></p>
+				<p>₱ 145 (Large)</p>
+				<button onclick="addToCart('CHICKEN POPPERS', 145)">Add to Cart</button>
+			</div>
+		</div>
+		<br><br>
+	</div>
+
+	<br>
+	<h3>Team Bonchon!</h3>
+	<img src="./images/homepage/grpbndl.png" title="Team Bonchon" height="30%" width="30%"> 
+	<p><strong>Hang out with barkada? Small celebration for little milestones? Catching up with old friends? </strong></p>
+	<p>This group bundle for FOUR is a good selection of our classics which is a no brainer choice if you simply</p>
+	<p>when you can't seem to choose. And it's only 399 pesos!</p>
+	<br>
+
+	<div class="orangeb wt">
+		<br>
+		<h3>Snack on the GO!</h3>
+		<img src="./images/homepage/chknwthfries.png" alt="Chicken and Fries" usemap="#chknfry" title="Snack on the Go" height="25%" width="25%">
+		<p>Chicken poppers and fries is the perfect snack to munch on when you're simply craving or needing </p>
+		<p>something to eat when you're running late. Only 98 pesos.</p>
+		<br>
+	</div>
+
+	<br>
+	<h3>Bibimbowl </h3>
+	<img src="./images/homepage/BonChon_bibimbowl.png" height="25%" width="50%">
+	<p><strong>Bibimbowl – Our signature, Korean rice bowl with a mix of veggies, and your choice of special sauce; Creamy Curry, Original, and Fiery Spice.</strong></p>
+	<p>It is our new samgyeopsal-inspired rice bowl that is packed with meat and an assortment of vegetables. And it's only 99 pesos!</p>
+	<br>
+
+	<div class="orangeb wt">
+		<br>
+		<h3>BonChon Bingsu!</h3>
+		<img src="https://2.bp.blogspot.com/-ZObGP7xaD5s/WOTBx4WrEfI/AAAAAAAABAc/Gbx6EEtEBfUtyjdUoQNpDkJuBoLuC7cWACLcB/s1600/Bingsu-Web-Banner.jpg"  height="30%" width="50%">
+		<p>BonChon Bingsu is the perfect after – meal Korean iced dessert that is globally making a buzz. It is made from ultra – fine, powder-like,
+		snow ice that gives a one of kind experience like no other. Sprinkled with bits of fruits and various toppings, drizzled with syrup, and topped with premium Milky Kreme, 
+		the delicious soft serve ice – cream to give an extra ordinary delight after every meal.</p>
+		<br>
+	</div>
+	<br><br>
+
+	<p><i>Copyright © 2023 <a style="color:blue" href="http://bonchon.com.ph/" target="_blank">BonChon Chicken Philippines</a>. All rights reserved. <a style="color:blue" href="https://bonchon.com.ph/terms-of-use" target="_blank"> Terms of Use </a> | <a style="color:blue" href="https://bonchon.com.ph/legal" target="_blank"> Legal </a>| <a id="mark">Site Map</a></p></i>
+
+	<br><br>
+
+	<img src="./images/head/logo.png" height="10%" width="10%">
+
+	<br><br>
+
+	<!-- Add the View Cart button at the bottom of the page -->
+	<center><button onclick="window.location.href='Cart.html'">View Cart</button></center>
+</body>
+</html>

@@ -1,0 +1,106 @@
+
+<html>
+
+<head>
+    <link rel="icon" href="./images/head/logo.png">
+    <link rel="stylesheet" type="text/css" href="bonchon.css">
+    <title>Cart</title>
+    <script>
+        function loadCart() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let cartItems = document.getElementById('cartItems');
+            let total = 0;
+
+            cartItems.innerHTML = '';
+            cart.forEach((item, index) => {
+                total += item.price;
+                cartItems.innerHTML += `
+                    <tr>
+                        <td>${item.item}</td>
+                        <td>₱${item.price}</td>
+                        <td><button onclick="removeFromCart(${index})">Remove</button></td>
+                    </tr>
+                `;
+            });
+            document.getElementById('total').innerText = "Total: ₱" + total;
+        }
+
+        function removeFromCart(index) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            loadCart();
+        }
+
+        function displayReceipt() {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            let receipt = "Receipt:\n\n";
+            let total = 0;
+            cart.forEach((item, index) => {
+                receipt += `${index + 1}. ${item.item} - ₱${item.price}\n`;
+                total += item.price;
+            });
+            receipt += `\nTotal: ₱${total}`;
+            alert(receipt);
+        }
+    </script>
+</head>
+
+<body onload="loadCart()">
+    <ul class="navul">
+        <li class="navli"><a href="index.html">Home</a></li>
+        <li class="navli"><a href="aboutus.html">Menu</a></li>
+        <li class="navli"><a href="contactus.html">Contact Us</a></li>
+        <li class="navli"><a href="registration.html">Registration</a></li>
+        <li class="navli"><a href="login.html">Log In</a></li>
+        <li class="navli"><a href="Cart.html">Cart</a></li>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <img src="./images/head/logo.png" height="50px" width="50px">
+    </ul>
+
+    <header></header>
+
+    <div class="orangeb wt aw">
+        <br>
+        <br>
+        <br>
+        <h1>Cart</h1>
+        <p>Review your selected items before checkout.</p>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+            </tbody>
+        </table>
+        <h2 id="total">Total: ₱0</h2>
+    </div>
+
+    <div>
+        <center><button onclick="displayReceipt()">Check out</button></center>
+    </div>
+
+    <br>
+    <br>
+    <p><i>Copyright © 2023 <a style="color:blue" href="http://bonchon.com.ph/" target="_blank">BonChon Chicken Philippines</a>. All rights reserved. <a style="color:blue" href="https://bonchon.com.ph/terms-of-use" target="_blank"> Terms of Use </a> | <a style="color:blue" href="https://bonchon.com.ph/legal" target="_blank"> Legal </a>| <a id="mark">Site Map</a></p></i>
+
+    <br>
+    <br>
+
+    <img src="./images/head/logo.png" height="10%" width="10%">
+
+    <br>
+    <br>
+</body>
+
+</html>
